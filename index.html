@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for My Girlfriend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: large;
+            font-style: italic;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-style: italic;
+            font-size: 24px;
+            color: rgb(185, 130, 42);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Frogga,</h1>
+        <p>I just wanted to take a moment to tell you how special you are to me.</p>
+        <p id="message">You mean everything to me. I love you!</p>
+        <p>From, koolest guy on this planet</p>
+        <p>❤️❤️❤️</p>
+    </div>
+    <script>
+        // You can use JavaScript to dynamically change or animate elements on the page
+        // For example, you can change the message periodically
+        const messages = [
+            "You are my sunshine.",
+            "You make me smile every day.",
+            "Life is better with you by my side.",
+            "You're the most beautiful person I know.",
+            "I love you more than words can express."
+        ];
+        const messageElement = document.getElementById("message");
+        let index = 0;
+        setInterval(() => {
+            messageElement.textContent = messages[index];
+            index = (index + 1) % messages.length;
+        }, 5000); // Change message every 5 seconds
+    </script>
+</body>
+</html>
